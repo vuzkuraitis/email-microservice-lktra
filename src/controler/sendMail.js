@@ -8,7 +8,7 @@ const sendMail = async (req, res) => {
   const transporter = nodemailer.createTransport(config.mailConfig);
 
   const info = await transporter.sendMail({
-    from: '"Krepšinio Treneris" <treneris@lktra.lt>',
+    from: '"Krepšinio Treneris" <krepsinio@treneriai.com>',
     to,
     subject,
     html,
